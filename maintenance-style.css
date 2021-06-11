@@ -1,0 +1,496 @@
+
+:root{
+    --white : #fff;
+    --black : #000;
+    --blue : #31326f;
+    /* --light-blue : #1381ff */
+    --light-blue : #84bdff;
+    --color-primary : #fff;
+    --orange : #ffc400f6;
+    --color-grey : #e3eef8;
+    --light-grey : #ccc;
+    --dark-grey : #222831;
+    --dodge-blue: #0070e0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+/* body{
+    font-family: "Nexa Light";
+} */
+p{
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+/*HEADER SECTION============================*/
+
+.head-container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header{
+    width: 100%;
+    background-color: var(--white);
+    padding: 5px 0;
+}
+
+nav{
+    width: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+}
+
+nav .logo{
+    width: 12rem;
+    height: 3rem;  
+}
+
+.main_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style:  none;
+    font-family: "Nexa"
+}
+
+.main_menu li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    margin-left: 3rem;
+    color: gray;
+}
+
+.main_menu li a:hover{
+    color: var(--dodge-blue);
+    border-bottom: 4px solid var(--orange);
+}
+
+.main_menu li .active{
+    color: var(--dodge-blue);
+    border-bottom: 4px solid var(--orange);
+}
+
+.language-type li a:hover{
+    color: var(--dodge-blue);
+    border-bottom: 3px solid var(--dodge-blue);
+}
+.language-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style:  none;
+    border-left: 1px solid gray;
+    font-family: "Nexa";
+    margin-left: 15rem;
+}
+
+.language-type li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    margin-left: 3rem;
+    color: gray;
+}
+
+.language-type li a:hover{
+    color: var(--dodge-blue);
+    border-bottom: 3px solid var(--dodge-blue);
+}
+
+.language-type li .active{
+    color: var(--dodge-blue);
+    border-bottom: 3px solid var(--dodge-blue);
+}
+
+.menu_bars,
+.close{
+font-size: 2.5rem;
+color: var(--dark-grey);
+cursor: pointer;
+}
+
+.menu_bars{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 3rem 0 0;
+    display: none;
+}
+
+
+
+.footer-container{
+    background: linear-gradient(-90deg, var(--dodge-blue), var(--blue));
+    /* background-color: var(--blue); */
+}
+
+.footer-boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1;
+    z-index: 1;
+    margin: auto;
+    padding: 5rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.follow-us{
+    color: var(--white);
+    padding: 1rem;
+    width: 20%;
+    margin-top: 30px;
+}
+
+.follow-us a{
+    color: var(--white);
+}
+
+.follow-us h2{
+    font-family: "Nexa Light";
+    font-size: 2rem;
+    padding: 5px;
+    width: 150px;
+}
+
+.follow-us .footer-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow-us .footer-icon i{
+    /* padding: 10px 10px 10px 10px; */
+    font-size: 23px;
+    /* border: 1px solid var(--white); */
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.quick-links{
+    margin-left: 30%;
+    padding: 20px 50px 50px 50px;
+}
+
+.quick-links h1{
+    font-size: 3rem;
+    font-family: "Nexa";
+    color: var(--white);
+}
+
+.quick-links ul{
+    list-style: none;
+}
+
+.quick-links li{
+    font-size: 1.5rem;
+    font-family: "Nexa";
+    font-weight: bold;
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.quick-links li a{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.quick-links li a:hover{
+    color: var(--white);
+}
+
+.follow-us .footer-icon i:hover{
+    color: var(--orange);
+}
+
+.contact{
+    margin-left: 10%;
+    padding: 20px 50px 50px 50px;
+}
+
+.contact h2{
+    font-size: 3rem;
+    font-family: "Nexa";
+    color: var(--white);
+}
+
+.contact .text{
+    margin-top: 40px;
+}
+
+.contact p{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: "Nexa";
+    color: var(--orange);
+}
+
+#ScrollUp{
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    font-size: 15px;
+}
+
+#ScrollUp i{
+    color: white;
+    font-size: 20px;
+}
+
+#ScrollUp:hover{
+    background-color: var(--orange);
+}
+
+/*END OF FOOTER===============================================*/
+
+.introduction-container{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/homepage-1260x580.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 50px 50px 50px;
+}
+
+.introduction-text   h1{
+    padding: 10px 10px 10px 10px;
+    margin-left: 100px;
+    color: var(--white);
+    width: 40%;
+    font-family: "Nexa";
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid var(--white);
+}
+
+
+.maintenance-introduction .introduction-text-infos p{
+    padding:10px 10px 10px 10px;
+    width: 80%;
+    color: rgba(0, 92, 179, 0.993);
+    font-size: 20px;
+    font-family: "Nexa Light";
+    border-left: 5px solid var(--dodge-blue);
+}
+
+.maintenance-introduction .introduction-text-infos spam{
+    font-weight: bold;
+    font-family: "Nexa";
+}
+
+.introduction-text-infos{
+    padding:30px 0 30px 100px;
+    background-color: var(--color-grey);
+}
+
+.introduction-text p{
+    margin:30px 0 0 100px;
+    width: 40%;
+    color: var(--white);
+    font-size: 15px;
+    font-family: "Nexa Light";
+}
+
+.details-boxes .maintenance-details-box h1{
+    padding: 20px 20px 20px 20px;
+    background-color: var(--dodge-blue);
+    border-left: 10px solid rgba(0, 92, 179, 0.993);
+    color: white;
+    text-transform: uppercase;
+    font-family: "Nexa";
+    font-size: 2rem;
+}
+
+.detail-box .formation-box{
+    margin: 10px 10px 10px 10px;
+}
+
+.tranquilite-title h1{
+    padding: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+    font-size: 4rem;
+    font-family: "Nexa";
+    text-transform: uppercase;
+}
+
+.tranquilite-title h3{
+    padding: 0 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+    font-size: 2rem;
+    font-family: "Nexa";
+}
+
+.maintenance-details-box .tranquilite-title{
+    /* text-align: ; */
+    background-color: var(--dodge-blue);
+    /* background: linear-gradient(-90deg,var(--white), var(--dodge-blue)); */
+    color: var(--white);
+    border-right: 2px solid var(--white);
+}
+
+.pack-tranquilite{
+    padding: 20px 20px 20px 20px;
+}
+
+.pack-tranquilite-container{
+    padding: 10px 10px 10px 10px;
+    /* width: 50%; */
+}
+
+.pack-tranquilite-container h3{
+    color: var(--blue);
+    font-size: 2rem;
+    font-family: "Nexa";
+    padding: 5px 5px 5px 5px;
+}
+
+.pack-tranquilite-container h3 i{
+    color: var(--dodge-blue);
+    padding: 5px;
+}
+
+.pack-tranquilite-container p{
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-family: "Nexa";
+    /* padding: 5px 5px 5px 5px; */
+    margin-left: 40px;
+}
+
+.pack-tranquilite-image img{
+    width: 60%;
+    margin: 50% 0 0 20%;
+}
+
+
+.maintenance-details-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1;
+    z-index: 1;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.serinite-title h1{
+    padding: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+    font-size: 4rem;
+    font-family: "Nexa";
+    text-transform: uppercase;
+}
+
+.serinite-title h3{
+    padding: 0 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+    font-size: 2rem;
+    font-family: "Nexa";
+}
+
+.pack-serinite{
+    padding: 20px 20px 20px 20px;
+}
+
+.pack-serinite-container{
+    padding: 10px 10px 10px 10px;
+    /* width: 50%; */
+}
+
+.pack-serinite-container h3{
+    color: var(--blue);
+    font-size: 2rem;
+    font-family: "Nexa";
+    padding: 5px 5px 5px 5px;
+}
+
+.pack-serinite-container h3 i{
+    color: var(--dodge-blue);
+    padding: 5px;
+}
+
+.pack-serinite-container p{
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-family: "Nexa";
+    /* padding: 5px 5px 5px 5px; */
+    margin-left: 40px;
+}
+
+.pack-serinite-image img{
+    width: 60%;
+    margin: 50% 0 0 20%;
+}
+
+.maintenance-details-box .serinite-title{
+    border-left: 2px solid var(--white);
+    text-align: right;
+    background-color: var(--dodge-blue);
+    /* background: linear-gradient(-90deg, var(--dodge-blue), var(--white)); */
+    color: var(--white);
+}
+
+.maintenance-detail-process{
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+.maintenance-detail-process h1{
+    /* padding: 20px 20px 20px 20px; */
+    color: var(--blue);
+    font-size: 5rem;
+    font-family: "Nexa";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    /* margin: 20px 20px 20px 20px; */
+}
+
+.maintenance-detail-process .process-image{
+    /* width: 70%;
+    height: 70%; */
+    margin-top: 20px;
+    padding: 0 200px 0 200px;
+}

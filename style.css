@@ -1,0 +1,802 @@
+
+:root{
+    --white : #fff;
+    --black : #000;
+    --blue : #31326f;
+    /* --light-blue : #1381ff */
+    --light-blue : #84bdff;
+    --color-primary : #fff;
+    --orange : #ffc400f6;
+    --color-grey : #e3eef8;
+    --light-grey : #ccc;
+    --dark-grey : #222831;
+    --dodge-blue: #0070e0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+/* body{
+    font-family: "Nexa Light";
+} */
+p{
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+
+img{
+    width: 100%;
+}
+
+
+/*HEADER SECTION============================*/
+
+.head-container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header{
+    width: 100%;
+    background-color: var(--white);
+    padding: 5px 0;
+}
+
+nav{
+    width: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+}
+
+nav .logo{
+    width: 12rem;
+    height: 3rem;  
+}
+
+.main_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style:  none;
+    font-family: "Nexa"
+}
+
+.main_menu li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    margin-left: 3rem;
+    color: gray;
+}
+
+.main_menu li a:hover{
+    color: var(--dodge-blue);
+    border-bottom: 4px solid var(--orange);
+}
+
+.main_menu li .active{
+    color: var(--dodge-blue);
+    border-bottom: 4px solid var(--orange);
+}
+
+.main_menu li a:focus{
+    color: var(--dodge-blue);
+    border-bottom: 4px solid var(--orange);
+}
+.language-type li a:hover{
+    color: var(--dodge-blue);
+    border-bottom: 3px solid var(--dodge-blue);
+}
+.language-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style:  none;
+    border-left: 1px solid gray;
+    font-family: "Nexa";
+    margin-left: 15rem;
+}
+
+.language-type li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    margin-left: 3rem;
+    color: gray;
+}
+
+.language-type li a:hover{
+    color: var(--dodge-blue);
+    border-bottom: 3px solid var(--dodge-blue);
+}
+
+.menu_bars,
+.close{
+font-size: 2.5rem;
+color: var(--dark-grey);
+cursor: pointer;
+}
+
+.menu_bars{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 3rem 0 0;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intro-container {
+    /* width: 300%; */
+    position: relative;
+    /* margin: auto; */
+  }
+.intro-container .first-container{
+    /* height: 100; */
+    display: none;
+    
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgb(107, 107, 107);
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    user-select: none;
+  }
+
+  .next {
+    right: 50px;
+  }
+  
+  .prev{
+    left: 50px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(27, 27, 27, 0.8);
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-container{
+    background: linear-gradient(-90deg, var(--dodge-blue), var(--blue));
+    /* background-color: var(--blue); */
+}
+
+.footer-boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1;
+    z-index: 1;
+    margin: auto;
+    padding: 5rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.follow-us{
+    color: var(--white);
+    padding: 1rem;
+    width: 20%;
+    margin-top: 30px;
+}
+
+.follow-us a{
+    color: var(--white);
+}
+
+.follow-us h2{
+    font-family: "Nexa Light";
+    font-size: 2rem;
+    padding: 5px;
+    width: 150px;
+}
+
+.follow-us .footer-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow-us .footer-icon i{
+    /* padding: 10px 10px 10px 10px; */
+    font-size: 23px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.quick-links{
+    margin-left: 30%;
+    padding: 20px 50px 50px 50px;
+}
+
+.quick-links h1{
+    font-size: 3rem;
+    font-family: "Nexa";
+    color: var(--white);
+}
+
+.quick-links ul{
+    list-style: none;
+}
+
+.quick-links li{
+    font-size: 1.5rem;
+    font-family: "Nexa";
+    font-weight: bold;
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.quick-links li a{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.quick-links li a:hover{
+    color: var(--white);
+}
+
+.follow-us .footer-icon i:hover{
+    color: var(--orange);
+}
+
+.contact{
+    margin-left: 10%;
+    padding: 20px 50px 50px 50px;
+}
+
+.contact h2{
+    font-size: 3rem;
+    font-family: "Nexa";
+    color: var(--white);
+}
+
+.contact .text{
+    margin-top: 40px;
+}
+
+.contact p{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: "Nexa";
+    color: var(--orange);
+}
+
+#ScrollUp{
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    font-size: 15px;
+}
+
+#ScrollUp i{
+    color: white;
+    font-size: 20px;
+}
+
+#ScrollUp:hover{
+    background-color: var(--orange);
+}
+
+/*INTRODUCTION SECTION=======================*/
+.intro{
+    width: 100%;
+}
+.first-container{
+    width: 100%;
+    height: 100;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 2rem;
+    column-gap: 2rem;
+    z-index: 1;
+    /* padding: 0 3rem; */
+    justify-content: space-between;
+    background:  rgb(238, 238, 238);
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+#last-slider{
+    background-color: rgb(154, 205, 255);
+}
+
+#last-slider .intro-text{
+    width: 20%;
+    height: 50%;
+    color: var(--white);
+    font-family: "Nexa";
+    margin-left: 10%;
+    padding: 20px 0;
+}
+
+#last-slider .intro-text h1{
+    width: 100%;
+    font-family: "Nexa";
+    font-size: 30px;
+    padding: 5px 5px 5px 0;
+    border-bottom: 5px solid var(--white); 
+  }
+
+  #last-slider .intro-image img{
+      color: var(--white);
+  }
+
+.intro-text{
+    width: 20%;
+    height: 50%;
+    color: var(--dodge-blue);
+    font-family: "Nexa";
+    margin-left: 10%;
+    padding: 20px 0;
+}
+
+.intro-text h1{
+    width: 80px;
+    font-family: "Nexa";
+    font-size: 30px;
+    padding: 5px 5px 5px 0;
+    border-bottom: 5px solid var(--dodge-blue);
+}
+
+.intro-text p{
+    margin-top: 30px;
+    /* text-align: justify; */
+
+}
+.button{
+    margin-top: 40px;
+}
+
+.button a{
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Nexa";
+    padding: 10px 10px 10px 10px;
+    background-color: var(--dodge-blue);
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+.button a:hover{
+    background-color: var(--white);
+    color: var(--dodge-blue);
+    border: 1px solid var(--dodge-blue);
+}
+
+.intro-image{
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+    margin-right: 10%;
+}
+
+.first-container .right{
+    color: var(--white);
+    background-color: rgb(110, 110, 110);
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin-top: 15%;
+    cursor: pointer;
+}
+
+.right i{
+font-size: 30px;
+}
+
+/* .first-container .intro-image{
+    z-index: 11;
+    transform: translateY(-80%);
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.first-container:hover .intro-image{
+    transform: translateY(0);
+} */
+
+
+/*SERVICES SECTION============================*/
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1;
+    z-index: 1;
+    width: 200rem;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+.services-container .service-text{
+    padding: 30px 30px 80px 30px;
+    background-color: var(--dodge-blue);
+    font-family: "Nexa";
+}
+
+.services-container .service-text h2{
+    color: var(--white);
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 64, 124, 0.993);
+
+}
+
+.services-container .service-text h2 spam{
+    color: var(--orange);
+}
+
+.services-container .service-text:hover{
+    background-color: rgba(0, 92, 179, 0.993);
+}
+.services-container .service-text p{
+    color: var(--white);
+    margin: 20px 0 30px 0;
+}
+
+.services-container .service-text a{
+    color: var(--orange);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Nexa";
+    cursor: pointer;
+}
+
+.services-container .service-text a:hover{
+    color: var(--white);
+}
+
+
+
+
+/*ABOUT SECTION============================*/
+
+.about-header{
+    text-align: center;
+    display: none;
+}
+
+.about-header h1{
+    color: var(--dodge-blue);
+    margin-top: 5rem;
+    font-size: 5rem;
+    font-family: "Nexa";
+}
+
+.about-box{
+    margin: auto;
+}
+
+.about-box:hover{
+    animation: slide linear 2s;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }   
+}
+
+.about-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1;
+    z-index: 1;
+    width: 200rem;
+    max-width: 85%;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.about-details .about-box{
+    padding: 30px 40px 40px 40px;
+}
+
+.about-details .about-box h1{
+    color: rgba(0, 92, 179, 0.993);
+    width: 60px;
+    font-family: "Nexa Light";
+    font-size: 40px;
+    padding: 5px 5px 5px 0;
+    border-bottom: 7px solid var(--orange);
+    text-align: center;
+    margin-left: 11.5rem;
+}
+
+.about-details .about-box h2{
+    color:  rgba(0, 92, 179, 0.993);;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Nexa";
+    margin: 2rem;
+}
+
+.about-details .about-box p{
+    text-align: center;
+    font-family: "Nexa";
+    margin: 2rem;
+}
+
+.about-details .about-box img{
+    margin-top: 3rem;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.about-boxes a{
+    display: block;
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Nexa";
+    cursor: pointer;
+    width: 200rem;
+    max-width: 85%;
+    padding: 2rem;
+    text-align: end;
+}
+
+.about-boxes a:hover{
+    color: var(--orange);
+}
+
+
+
+
+/*EVENT SECTION============================*/
+
+.event-container{
+    width: 200rem;
+    max-width: 80%;
+    width: 200rem;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.event-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1;
+    z-index: 1;
+    border: 2px solid var(--dodge-blue);
+    margin-top: 10px;
+}
+
+.event-box .event-text{
+    background-color: var(--dodge-blue);
+    color: var(--white);
+}
+
+.event-box .event-text h2{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Nexa";
+    margin: 2rem;
+    padding-top: 20px;
+}
+
+.event-box .event-text p{
+    text-align: center;
+    font-family: "Nexa Light";
+    margin: 0 8rem 0 8rem;
+}
+
+.event-box a{
+    color: var(--white);
+    display: block;
+    border: 1px solid var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: "Nexa";
+    cursor: pointer;
+    width: 200rem;
+    max-width: 30%;
+    padding: 0.6rem;
+    /* margin-top: 30px;
+    margin-left: 35%; */
+    margin: 30px 0 30px 35%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.event-box a:hover{
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.event-image img{
+    filter: grayscale(100%);
+}
+
+.event-image img:hover{
+    filter: grayscale(0);
+}
+
+
+
+
+/*TESTIMONIES SECTION============================*/
+
+.testimony-container{
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+}
+
+.testimony-header{
+    text-align: center;
+}
+.testimony-header{
+    padding-bottom: 5px;
+}
+
+.testimony-header h1{
+    color: rgba(0, 92, 179, 0.993);
+    margin-top: 5rem;
+    font-size: 5rem;
+    font-family: "Nexa";
+}
+
+.testimony-box{
+    margin: auto;
+}
+
+.testimony-details{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1;
+    z-index: 1;
+    width: 80rem;
+    max-width: 70%;
+    margin: auto;
+    padding: 5rem;
+}
+
+.testimony-details .testimony-box{
+
+    padding: 0px 50px 50px 0;
+}
+
+.testimony-details .testimony-box h1{
+    color: rgba(0, 92, 179, 0.993);
+    width: 60px;
+    font-family: "Nexa Light";
+    font-size: 40px;
+    padding: 5px 5px 5px 0;
+    border-bottom: 7px solid var(--orange);
+    text-align: center;
+}
+
+.testimony-details .testimony-box h2{
+    color:  rgba(0, 92, 179, 0.993);
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Nexa";
+    margin: 1.3rem;
+}
+
+.testimony-details .testimony-box p{
+    text-align: center;
+    font-family: "Nexa";
+    margin: 0.6rem;
+    font-size: 1rem;
+    color: gray;
+}
+
+.testimony-details .testimony-box img{
+    border-radius: 50%;
+    margin-left: 25%;
+    background-color: var(--white);
+    width: 50%;
+    height: 45%; 
+}
+
+.testimony-details .testimony-right{
+    color: gray;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin-top: 15%;
+    cursor: pointer;
+}

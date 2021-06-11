@@ -1,0 +1,490 @@
+:root{
+    --white : #fff;
+    --black : #000;
+    --blue : #31326f;
+    /* --light-blue : #1381ff */
+    --light-blue : #84bdff;
+    --color-primary : #fff;
+    --orange : #ffc400f6;
+    --color-grey : #e3eef8;
+    --light-grey : #ccc;
+    --dark-grey : #222831;
+    --dodge-blue: #0070e0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+html, body{
+    position: relative;
+    height: 100%;
+}
+
+p{
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+/*HEADER SECTION============================*/
+
+.head-container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header{
+    width: 100%;
+    background-color: var(--white);
+    padding: 5px 0;
+}
+
+nav{
+    width: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+}
+
+nav .logo{
+    width: 12rem;
+    height: 3rem;  
+}
+
+.main_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style:  none;
+    font-family: "Nexa"
+}
+
+.main_menu li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    margin-left: 3rem;
+    color: gray;
+}
+
+.main_menu li a:hover{
+    color: var(--dodge-blue);
+    border-bottom: 4px solid var(--orange);
+}
+
+.main_menu li .active{
+    color: var(--dodge-blue);
+    border-bottom: 4px solid var(--orange);
+}
+
+.language-type li a:hover{
+    color: var(--dodge-blue);
+    border-bottom: 3px solid var(--dodge-blue);
+}
+.language-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style:  none;
+    border-left: 1px solid gray;
+    font-family: "Nexa";
+    margin-left: 15rem;
+}
+
+.language-type li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    margin-left: 3rem;
+    color: gray;
+}
+
+.language-type li a:hover{
+    color: var(--dodge-blue);
+    border-bottom: 3px solid var(--dodge-blue);
+}
+
+.language-type li .active{
+    color: var(--dodge-blue);
+    border-bottom: 3px solid var(--dodge-blue);
+}
+
+.menu_bars,
+.close{
+font-size: 2.5rem;
+color: var(--dark-grey);
+cursor: pointer;
+}
+
+.menu_bars{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 3rem 0 0;
+    display: none;
+}
+
+
+
+.footer-container{
+    background: linear-gradient(-90deg, var(--dodge-blue), var(--blue));
+    /* background-color: var(--blue); */
+}
+
+.footer-boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1;
+    z-index: 1;
+    margin: auto;
+    padding: 5rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.follow-us{
+    color: var(--white);
+    padding: 1rem;
+    width: 20%;
+    margin-top: 30px;
+}
+
+.follow-us a{
+    color: var(--white);
+}
+
+.follow-us h2{
+    font-family: "Nexa Light";
+    font-size: 2rem;
+    padding: 5px;
+    width: 150px;
+}
+
+.follow-us .footer-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow-us .footer-icon i{
+    /* padding: 10px 10px 10px 10px; */
+    font-size: 23px;
+    /* border: 1px solid var(--white); */
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.quick-links{
+    margin-left: 30%;
+    padding: 20px 50px 50px 50px;
+}
+
+.quick-links h1{
+    font-size: 3rem;
+    font-family: "Nexa";
+    color: var(--white);
+}
+
+.quick-links ul{
+    list-style: none;
+}
+
+.quick-links li{
+    font-size: 1.5rem;
+    font-family: "Nexa";
+    font-weight: bold;
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.quick-links li a{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.quick-links li a:hover{
+    color: var(--white);
+}
+
+.follow-us .footer-icon i:hover{
+    color: var(--orange);
+}
+
+.contact{
+    margin-left: 10%;
+    padding: 20px 50px 50px 50px;
+}
+
+.contact h2{
+    font-size: 3rem;
+    font-family: "Nexa";
+    color: var(--white);
+}
+
+.contact .text{
+    margin-top: 40px;
+}
+
+.contact p{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: "Nexa";
+    color: var(--orange);
+}
+
+#ScrollUp{
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    font-size: 15px;
+}
+
+#ScrollUp i{
+    color: white;
+    font-size: 20px;
+}
+
+#ScrollUp:hover{
+    background-color: var(--orange);
+}
+
+/*END OF FOOTER===============================================*/
+
+.introduction-container{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/homepage-1260x580.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 50px 50px 50px;
+}
+
+.introduction-text   h1{
+    padding: 10px 10px 10px 10px;
+    margin-left: 100px;
+    color: var(--white);
+    width: 40%;
+    font-family: "Nexa";
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid var(--white);
+}
+
+
+.maintenance-introduction .introduction-text-infos p{
+    padding:10px 10px 10px 10px;
+    width: 80%;
+    color: rgba(0, 92, 179, 0.993);
+    font-size: 20px;
+    font-family: "Nexa Light";
+    border-left: 5px solid var(--dodge-blue);
+}
+
+.maintenance-introduction .introduction-text-infos spam{
+    font-weight: bold;
+    font-family: "Nexa";
+}
+
+.introduction-text-infos{
+    padding:30px 0 30px 100px;
+    background-color: var(--color-grey);
+}
+
+.introduction-text p{
+    margin:30px 0 0 100px;
+    width: 40%;
+    color: var(--white);
+    font-size: 15px;
+    font-family: "Nexa Light";
+}
+
+/*END OF INTRODUCTION SECTION=============================*/
+
+
+.vente-container{
+    width: 100%;
+}
+
+.vente-title{
+    /* background-color: #000000; */
+    margin: 20px 10px 10px 10px ;
+    text-align: center;
+}
+
+.vente-title h1{
+    font-family: "Nexa";
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--dodge-blue);
+}
+
+.swiper-container{
+    padding: 20px 20px 20px 20px;
+}
+
+.swiper-wrapper{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(30rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1;
+    z-index: 1; */
+    margin: auto;
+    padding: 5rem;
+    width: 100%;
+}
+
+.slider-box{
+    /* padding: 10px; */
+    /* height: 350px; */
+    /* width: 250px; */
+    /* position: relative; */
+    /* border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 105%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--dodge-blue);
+    background-color: rgb(107, 107, 107);
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    user-select: none;
+  }
+
+  .next {
+    right: 10px;
+  }
+  
+  .prev{
+    left: 10px;
+  } 
+
+  .prev:hover, .next:hover {
+    font-size: 1rem;
+    color: var(--orange);
+  } */
+
+
+.slider-box{
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px ;
+}
+
+.slider-box .vente-image{
+    padding: 20px;
+}
+
+.slider-box .vente-details h2{
+    padding: 10px;
+    font-family: "Nexa";
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.slider-box .vente-details p{
+    padding: 10px;
+    font-family: "Nexa";
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slider-box .vente-icons{
+    padding: 10px;
+}
+
+.slider-box .vente-icons i{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+
+.slider-box .vente-icons .sale{
+    color: var(--white);
+    background-color: var(--orange);
+    float: right;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slider-box .vente-icons .sale:hover{
+    color: var(--orange);
+    background-color: var(--white);
+    border-bottom: 2px solid var(--orange);
+}
+
+.slider-box:hover .vente-image img{
+    transform: scale(1.10);
+    transition:all ease 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.swiper-container{
+    /* padding: 20px 20px 20px 20px; */
+}
+
+.swiper-slide{
+    width: 300px !important;
+}

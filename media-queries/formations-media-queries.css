@@ -1,0 +1,77 @@
+@media screen and (max-width: 1000px){
+    
+    .formation-container h1{
+        width: 100%;
+        padding: 20px;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+    
+    .introduction-text p{
+        margin: 20px 0 0 40px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .main_menu li .active{
+        color: var(--dodge-blue);
+        border-bottom: 0;
+    }
+
+    .follow-us{
+        margin-left: 10px;
+    }
+    
+    .follow-us .footer-icon{
+        margin-left: 50px;
+    }
+
+    .formation-detail-objective p{
+        font-size: 1rem;
+        font-family: "Nexa";
+        font-weight: bold;
+        text-align: center;
+        padding: 0 0 10px 0;
+        width: 100%;
+    }
+
+    .course-schedule ul li{
+        padding: 5px;
+        margin-left: -5px;
+        list-style: none;
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: "Nexa";
+        text-align: center;
+        color: rgb(100, 100, 100);
+    }
+    
+    ul li .session-details{
+        border-left: 1px solid var(--dodge-blue);
+    }
+
+    .course-schedule h2{
+        font-size: 20px;
+    }
+
+    .content-details .course-content h3{
+        font-family: "Nexa";
+        font-size: 20px;
+    }
+
+    .content-details .course-content ul{
+        font-family: "Nexa";
+        padding: 20px 10px 20px 30px;
+        font-size: 1.1rem;
+        list-style: decimal;
+    }
+
+    .detail-box .formation-box h1{
+        font-size: 1.5rem;
+    }
+
+
+}
+@media screen and (max-width: 750px){
+    
+}
